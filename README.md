@@ -23,8 +23,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Frontend solution](https://www.frontendmentor.io/solutions/profile-card-component-using-flexbox-ubjyu9jz5B)
-- Live Site URL: [Live site with GitHub Pages](https://marioferrer.github.io/FM-01_profile-card-component/)
+- Solution Frontend Mentor: [Frontend solution](https://www.frontendmentor.io/solutions/qr-code-murYUcVduA)
+- Live Site: [Live site with GitHub Pages](https://marioferrer.github.io/FM-03_QR-code/)
 
 ## My process
 
