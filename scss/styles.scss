@@ -1,0 +1,71 @@
+@use "reset";
+
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+$font-family: "Outfit", sans-serif;
+
+@mixin flex($direction, $justify, $align, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 15px;
+  background-color: $Light-gray;
+
+  @include flex(row, center, center, nowrap);
+
+  .card {
+    width: 20rem;
+    height: auto;
+    background-color: $White;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    @include flex(column, center, center, nowrap);
+    gap: 1rem;
+
+    @media (max-width: 350px) {
+      width: 15rem;
+      min-width: 12rem;
+    }
+
+    &__img {
+      border-radius: .5rem;
+    }
+
+    &__text {
+      text-align: center;
+      margin: 0 .5rem;
+    }
+
+    &__h1 {
+      color: $Dark-blue;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      @media (max-width: 350px) {
+        font-size: .9rem;
+      }
+    }
+
+    &__p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: $Grayish-blue;
+
+      @media (max-width: 350px) {
+        font-size: .7rem;
+      }
+    }
+
+  }
+}
